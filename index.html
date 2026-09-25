@@ -3,160 +3,412 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mobile Genetix Medical Hair™ provides personalized medical hair solutions, medical wigs, cranial prostheses and human-hair solutions.">
 <title>Mobile Genetix Medical Hair™ | Medical Hair. Human Care.</title>
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;color:#29252f;background:#fff;line-height:1.6}
-header{background:#241336;color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
-.logo{font-size:20px;font-weight:bold;letter-spacing:.5px}
-nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px}
-.hero{background:linear-gradient(135deg,#241336,#56347a);color:white;padding:100px 8%;text-align:center}
-.hero h1{font-size:clamp(38px,7vw,70px);margin-bottom:18px}
-.hero p{font-size:21px;max-width:760px;margin:0 auto 32px;color:#eee}
+header{background:#241336;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:1000;box-shadow:0 3px 15px rgba(0,0,0,.15)}
+.logo{font-size:18px;font-weight:bold;letter-spacing:.5px}
 .gold{color:#d8b66a}
-.btn{display:inline-block;background:#d8b66a;color:#241336;padding:15px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin:6px}
-.btn.light{background:white}
-section{padding:75px 8%}
+nav{display:flex;align-items:center}
+nav a{color:white;text-decoration:none;margin-left:22px;font-size:14px;font-weight:bold}
+nav a:hover{color:#d8b66a}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:28px;cursor:pointer}
+
+.hero{background:linear-gradient(135deg,#241336,#56347a);color:white;padding:100px 8%;text-align:center}
+.hero h1{font-size:clamp(38px,7vw,70px);line-height:1.05;margin:18px 0}
+.hero p{font-size:20px;max-width:780px;margin:0 auto 30px;color:#eee}
+.hero .eyebrow{font-size:14px;letter-spacing:2px;margin-bottom:10px}
+
+.btn{display:inline-block;background:#d8b66a;color:#241336;padding:15px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin:6px;border:2px solid #d8b66a;cursor:pointer}
+.btn:hover{transform:translateY(-2px);opacity:.92}
+.btn.light{background:white;border-color:white}
+
+section{padding:75px 8%;scroll-margin-top:80px}
 .section-title{text-align:center;font-size:38px;color:#241336;margin-bottom:15px}
-.section-text{text-align:center;max-width:750px;margin:0 auto 45px;color:#666}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;max-width:1100px;margin:auto}
+.section-text{text-align:center;max-width:780px;margin:0 auto 45px;color:#666}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px;max-width:1100px;margin:auto}
 .card{padding:32px;background:#faf8fc;border-radius:18px;border:1px solid #eee;text-align:center}
 .card h3{color:#56347a;margin-bottom:12px;font-size:22px}
 .card p{color:#666}
+.card .price{font-size:25px;color:#241336;font-weight:bold;margin:10px}
+
 .dark{background:#241336;color:white}
 .dark .section-title{color:white}
+.dark .section-text{color:#ddd}
 .steps .card{background:white}
+
+.highlight{background:#f4eff8}
+.service-icon{font-size:34px;margin-bottom:10px}
+
+.faq{max-width:850px;margin:auto}
+details{background:#faf8fc;border:1px solid #eee;border-radius:12px;margin-bottom:12px;padding:18px 22px}
+summary{cursor:pointer;font-weight:bold;color:#56347a;font-size:17px}
+details p{margin-top:12px;color:#666}
+
 .cta{text-align:center;background:#f4eff8}
-footer{background:#171019;color:#ddd;text-align:center;padding:35px 8%;font-size:14px}
-@media(max-width:700px){nav{display:none}.hero{padding:75px 7%}section{padding:55px 7%}}
+
+.contact-box{max-width:800px;margin:auto;text-align:center;background:#faf8fc;border-radius:20px;padding:40px}
+.contact-box a{color:#56347a;font-weight:bold;text-decoration:none}
+
+footer{background:#171019;color:#ddd;text-align:center;padding:40px 8%;font-size:14px}
+footer p{margin:5px}
+
+@media(max-width:800px){
+header{padding:16px 6%}
+.logo{font-size:14px}
+.menu-btn{display:block}
+nav{display:none;position:absolute;top:100%;left:0;width:100%;background:#241336;flex-direction:column;padding:15px 0;box-shadow:0 8px 15px rgba(0,0,0,.2)}
+nav.active{display:flex}
+nav a{margin:0;padding:14px;width:100%;text-align:center}
+.hero{padding:75px 7%}
+.hero h1{font-size:48px}
+section{padding:60px 7%}
+.section-title{font-size:32px}
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">MOBILE GENETIX <span class="gold">MEDICAL HAIR™</span></div>
-<nav>
-<a href="#solutions">Solutions</a>
-<a href="#process">How It Works</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+<div class="logo">
+MOBILE GENETIX <span class="gold">MEDICAL HAIR™</span>
+</div>
+
+<button class="menu-btn" onclick="toggleMenu()" aria-label="Open navigation">
+☰
+</button>
+
+<nav id="navMenu">
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#solutions" onclick="closeMenu()">Solutions</a>
+<a href="#process" onclick="closeMenu()">How It Works</a>
+<a href="#consultation" onclick="closeMenu()">Consultations</a>
+<a href="#faq" onclick="closeMenu()">FAQs</a>
+<a href="#contact" onclick="closeMenu()">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<p class="gold"><strong>CRANIAL PROSTHESES & MEDICAL HAIR SOLUTIONS</strong></p>
-<h1>Medical Hair.<br><span class="gold">Human Care.</span></h1>
-<p>Premium medical hair and cranial prosthesis solutions designed with dignity, personalization and compassionate care for individuals experiencing hair loss.</p>
-<a class="btn" href="#consultation">BOOK YOUR PRIVATE CONSULTATION</a>
+
+<p class="gold eyebrow">
+<strong>CRANIAL PROSTHESES & MEDICAL HAIR SOLUTIONS</strong>
+</p>
+
+<h1>
+Medical Hair.<br>
+<span class="gold">Human Care.</span>
+</h1>
+
+<p>
+Premium medical hair and cranial prosthesis solutions designed with dignity, personalization and compassionate care for individuals experiencing hair loss.
+</p>
+
+<a class="btn" href="#consultation">
+BOOK YOUR PRIVATE CONSULTATION
+</a>
+
+<a class="btn light" href="tel:7349691449">
+CALL 734-969-1449
+</a>
+
 </section>
+
 
 <section id="about">
+
 <h2 class="section-title">More Than Hair.</h2>
-<p class="section-text">Hair loss can affect confidence, identity and the way you experience yourself. Mobile Genetix Medical Hair™ provides a personalized approach to medical hair solutions — because your experience deserves more than a product. It deserves care.</p>
+
+<p class="section-text">
+Hair loss can affect confidence, identity and the way you experience yourself. Mobile Genetix Medical Hair™ provides a personalized approach to medical hair solutions — because your experience deserves more than a product. It deserves care.
+</p>
+
 </section>
 
-<section id="solutions">
+
+<section id="solutions" class="highlight">
+
 <h2 class="section-title">Find Your Hair Solution</h2>
-<p class="section-text">Personalized options for clients experiencing hair loss related to medical treatment, alopecia, autoimmune conditions, genetic hair loss and other causes.</p>
+
+<p class="section-text">
+Personalized options for clients experiencing hair loss related to medical treatment, alopecia, autoimmune conditions, genetic hair loss and other causes.
+</p>
 
 <div class="grid">
+
 <div class="card">
+<div class="service-icon">✦</div>
 <h3>Medical Wigs</h3>
-<p>Premium hair solutions selected around your individual needs, lifestyle and desired appearance.</p>
+<p>
+Premium hair solutions selected around your individual needs, lifestyle and desired appearance.
+</p>
 </div>
 
 <div class="card">
+<div class="service-icon">✦</div>
 <h3>Cranial Prostheses</h3>
-<p>Customized solutions designed around fit, comfort, construction, density, texture and personal preference.</p>
+<p>
+Customized solutions designed around fit, comfort, construction, density, texture and personal preference.
+</p>
 </div>
 
 <div class="card">
+<div class="service-icon">✦</div>
 <h3>Human Hair Solutions</h3>
-<p>Explore premium human-hair options with personalized color, texture, length and density recommendations.</p>
+<p>
+Explore premium human-hair options with personalized color, texture, length and density recommendations.
+</p>
 </div>
 
 <div class="card">
+<div class="service-icon">✦</div>
 <h3>Custom Solutions</h3>
-<p>A concierge experience for clients who need a more personalized medical hair solution.</p>
+<p>
+A concierge experience for clients who need a more personalized medical hair solution.
+</p>
 </div>
+
 </div>
 </section>
 
+
 <section id="process" class="dark">
+
 <h2 class="section-title">Your Experience</h2>
-<p class="section-text">A private, personalized process from consultation to your final hair solution.</p>
+
+<p class="section-text">
+A private, personalized process from consultation to your final hair solution.
+</p>
 
 <div class="grid steps">
+
 <div class="card">
 <h3>01. Consult</h3>
-<p>Tell us about your hair-loss experience, goals and preferences.</p>
+<p>
+Tell us about your hair-loss experience, goals and preferences.
+</p>
 </div>
 
 <div class="card">
 <h3>02. Recommend</h3>
-<p>Receive personalized recommendations based on your consultation.</p>
+<p>
+Receive personalized recommendations based on your consultation.
+</p>
 </div>
 
 <div class="card">
 <h3>03. Customize</h3>
-<p>Finalize specifications such as size, texture, color, density and construction.</p>
+<p>
+Finalize specifications such as size, texture, color, density and construction.
+</p>
 </div>
 
 <div class="card">
 <h3>04. Receive</h3>
-<p>Your selected solution is prepared and delivered with care instructions and follow-up support.</p>
+<p>
+Your selected solution is prepared and delivered with care instructions and follow-up support.
+</p>
 </div>
+
 </div>
 </section>
 
+
 <section id="consultation">
+
 <h2 class="section-title">Private Consultations</h2>
-<p class="section-text">Your journey begins with a private consultation designed to understand what you need before recommending a solution.</p>
+
+<p class="section-text">
+Your journey begins with a private consultation designed to understand what you need before recommending a solution.
+</p>
 
 <div class="grid">
+
 <div class="card">
 <h3>Medical Hair Consultation</h3>
-<p><strong>$75</strong></p>
-<p>Personalized medical hair assessment and product guidance.</p>
+<p class="price">$75</p>
+<p>
+Personalized medical hair assessment and product guidance.
+</p>
 <br>
-<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Medical Hair Consultation">BOOK</a>
+<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Medical%20Hair%20Consultation">
+BOOK
+</a>
 </div>
+
 
 <div class="card">
 <h3>Custom Cranial Prosthesis</h3>
-<p><strong>$150</strong></p>
-<p>Detailed consultation for clients considering a custom cranial prosthesis.</p>
+<p class="price">$150</p>
+<p>
+Detailed consultation for clients considering a custom cranial prosthesis.
+</p>
 <br>
-<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Custom Cranial Prosthesis Consultation">BOOK</a>
+<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Custom%20Cranial%20Prosthesis%20Consultation">
+BOOK
+</a>
 </div>
+
 
 <div class="card">
 <h3>Virtual Consultation</h3>
-<p><strong>$50</strong></p>
-<p>Convenient virtual consultation and personalized next-step guidance.</p>
+<p class="price">$50</p>
+<p>
+Convenient virtual consultation and personalized next-step guidance.
+</p>
 <br>
-<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Virtual Medical Hair Consultation">BOOK</a>
+<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Virtual%20Medical%20Hair%20Consultation">
+BOOK
+</a>
 </div>
+
 </div>
 </section>
+
+
+<section id="faq" class="highlight">
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<p class="section-text">
+A few common questions about Mobile Genetix Medical Hair™.
+</p>
+
+<div class="faq">
+
+<details>
+<summary>What is a cranial prosthesis?</summary>
+<p>
+A cranial prosthesis is a customized hair system designed for individuals experiencing significant hair loss. Options can be personalized for fit, appearance, texture, density and lifestyle needs.
+</p>
+</details>
+
+<details>
+<summary>Who may benefit from medical hair solutions?</summary>
+<p>
+Medical hair solutions may be appropriate for individuals experiencing hair loss associated with conditions such as alopecia, medical treatment, autoimmune conditions, genetic hair loss and other causes. A consultation helps determine what solution may be appropriate for your individual needs.
+</p>
+</details>
+
+<details>
+<summary>Do you offer human-hair solutions?</summary>
+<p>
+Yes. Human-hair options may be available depending on the client's needs, desired specifications and selected solution.
+</p>
+</details>
+
+<details>
+<summary>Can my hair solution be customized?</summary>
+<p>
+Yes. Customization may include factors such as size, color, texture, length, density and construction.
+</p>
+</details>
+
+<details>
+<summary>Do you accept insurance?</summary>
+<p>
+Coverage and reimbursement vary by insurance plan and individual circumstances. During your consultation, we can discuss documentation and next steps related to your specific situation. Insurance coverage is not guaranteed.
+</p>
+</details>
+
+<details>
+<summary>Do you offer virtual consultations?</summary>
+<p>
+Yes. Virtual medical hair consultations are available for clients who prefer a remote consultation experience.
+</p>
+</details>
+
+</div>
+</section>
+
 
 <section class="cta">
+
 <h2 class="section-title">Ready to Find Your Solution?</h2>
-<p class="section-text">Your hair journey is personal. Your care should be personal too.</p>
-<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com">CONTACT MOBILE GENETIX MEDICAL HAIR™</a>
+
+<p class="section-text">
+Your hair journey is personal. Your care should be personal too.
+</p>
+
+<a class="btn" href="#consultation">
+START YOUR CONSULTATION
+</a>
+
+<a class="btn light" href="mailto:mobilegenetixmedicalhair@outlook.com">
+EMAIL US
+</a>
+
 </section>
 
-<footer id="contact">
+
+<section id="contact">
+
+<h2 class="section-title">Contact Mobile Genetix Medical Hair™</h2>
+
+<div class="contact-box">
+
+<p>
+<strong>Have questions or ready to begin?</strong>
+</p>
+
+<br>
+
+<p>
+<a href="tel:7349691449">📞 734-969-1449</a>
+</p>
+
+<p>
+<a href="mailto:mobilegenetixmedicalhair@outlook.com">
+✉ mobilegenetixmedicalhair@outlook.com
+</a>
+</p>
+
+<br>
+
+<a class="btn" href="mailto:mobilegenetixmedicalhair@outlook.com?subject=Mobile%20Genetix%20Medical%20Hair%20Inquiry">
+SEND AN INQUIRY
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
 <p><strong>Mobile Genetix Medical Hair™</strong></p>
 <p>Cranial Prostheses & Medical Hair Solutions</p>
 <p>Medical Hair. Human Care.</p>
 <p>734-969-1449</p>
 <p>mobilegenetixmedicalhair@outlook.com</p>
+
 <br>
-<p>© 2026 Mobile Genetix Medical Hair™. A division of Mobile Genetix DNA.</p>
+
+<p>
+© 2026 Mobile Genetix Medical Hair™. A division of Mobile Genetix DNA.
+</p>
+
 </footer>
+
+
+<script>
+
+function toggleMenu(){
+const menu=document.getElementById("navMenu");
+menu.classList.toggle("active");
+}
+
+function closeMenu(){
+const menu=document.getElementById("navMenu");
+menu.classList.remove("active");
+}
+
+</script>
 
 </body>
 </html>
