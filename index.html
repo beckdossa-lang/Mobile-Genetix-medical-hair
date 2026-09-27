@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mobile Genetix Medical Hair™ | Medical Hair & Cranial Prosthesis Solutions</title>
+<title>Mobile Genetix Medical Hair™</title>
 
 <style>
 :root{
@@ -28,7 +28,7 @@ html{
 }
 
 body{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial,Helvetica,sans-serif;
   background:var(--cream);
   color:var(--text);
   line-height:1.6;
@@ -36,6 +36,7 @@ body{
 
 img{
   max-width:100%;
+  display:block;
 }
 
 /* NAVIGATION */
@@ -44,8 +45,8 @@ nav{
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(44,18,63,.97);
-  padding:15px 6%;
+  background:rgba(44,18,63,.98);
+  padding:16px 6%;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -55,7 +56,6 @@ nav{
   color:white;
   font-size:20px;
   font-weight:700;
-  letter-spacing:.5px;
 }
 
 .logo span{
@@ -65,7 +65,7 @@ nav{
 nav a{
   color:white;
   text-decoration:none;
-  margin-left:22px;
+  margin-left:20px;
   font-size:14px;
 }
 
@@ -77,9 +77,9 @@ nav a:hover{
 
 .hero{
   min-height:650px;
-  background-image:
-  linear-gradient(rgba(44,18,63,.65),rgba(44,18,63,.72)),
-  url('IMG_0218.jpeg');
+  background:
+    linear-gradient(rgba(44,18,63,.66),rgba(44,18,63,.76)),
+    url('IMG_0218.jpeg');
   background-size:cover;
   background-position:center;
   display:flex;
@@ -116,8 +116,13 @@ nav a:hover{
   border-radius:30px;
   text-decoration:none;
   font-weight:700;
-  margin-right:10px;
-  margin-bottom:10px;
+  margin:6px 8px 6px 0;
+  transition:.2s ease;
+}
+
+.button:hover{
+  transform:translateY(-2px);
+  opacity:.9;
 }
 
 .button.secondary{
@@ -162,6 +167,7 @@ section{
 
 .about-image{
   width:100%;
+  height:430px;
   overflow:hidden;
   border-radius:25px;
   box-shadow:0 15px 40px rgba(44,18,63,.18);
@@ -169,9 +175,8 @@ section{
 
 .about-image img{
   width:100%;
-  height:430px;
+  height:100%;
   object-fit:cover;
-  display:block;
 }
 
 .about h2{
@@ -209,7 +214,6 @@ section{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
 }
 
 .card-content{
@@ -247,7 +251,6 @@ section{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
 }
 
 .feature h2{
@@ -321,7 +324,6 @@ section{
   width:100%;
   height:100%;
   object-fit:cover;
-  display:block;
 }
 
 .education-card div:last-child{
@@ -370,8 +372,8 @@ section{
 
 .cta{
   background:
-  linear-gradient(rgba(44,18,63,.82),rgba(44,18,63,.88)),
-  url('IMG_0217.jpeg');
+    linear-gradient(rgba(44,18,63,.82),rgba(44,18,63,.88)),
+    url('IMG_0217.jpeg');
   background-size:cover;
   background-position:center;
   color:white;
@@ -419,6 +421,15 @@ section{
 .contact-item strong{
   color:var(--purple);
   display:block;
+}
+
+.contact-item a{
+  color:var(--text);
+  text-decoration:none;
+}
+
+.contact-item a:hover{
+  color:var(--purple);
 }
 
 /* FOOTER */
@@ -516,7 +527,7 @@ footer a{
     grid-template-columns:1fr;
   }
 
-  .about-image img{
+  .about-image{
     height:320px;
   }
 
@@ -553,7 +564,11 @@ footer a{
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Medical Hair Solutions Designed With <span>Care.</span></h1>
+
+    <h1>
+      Medical Hair Solutions Designed With
+      <span>Care.</span>
+    </h1>
 
     <p>
       Personalized medical hair and cranial prosthesis solutions
@@ -562,8 +577,14 @@ footer a{
       and other causes.
     </p>
 
-    <a href="#consultations" class="button">Book a Consultation</a>
-    <a href="#solutions" class="button secondary">Explore Solutions</a>
+    <a href="#consultations" class="button">
+      Book a Consultation
+    </a>
+
+    <a href="#solutions" class="button secondary">
+      Explore Solutions
+    </a>
+
   </div>
 </section>
 
@@ -575,6 +596,7 @@ footer a{
     </div>
 
     <div>
+
       <h2>Healthcare Meets Hair Restoration.</h2>
 
       <p>
@@ -589,17 +611,22 @@ footer a{
         understand their options and move forward with confidence.
       </p>
 
-      <a href="#contact" class="button">Connect With Us</a>
+      <a href="#consultations" class="button">
+        Book a Consultation
+      </a>
+
     </div>
 
   </div>
 </section>
 
 <section id="solutions">
+
   <div class="container">
 
     <div class="section-title">
       <h2>Medical Hair Solutions</h2>
+
       <p>
         Personalized solutions designed around your individual
         hair-loss experience and needs.
@@ -609,49 +636,64 @@ footer a{
     <div class="cards">
 
       <div class="card">
+
         <div class="card-image">
           <img src="IMG_0218.jpeg" alt="Hair loss">
         </div>
+
         <div class="card-content">
           <h3>Hair Loss Solutions</h3>
+
           <p>
             Support and personalized options for individuals
             experiencing different forms of hair loss.
           </p>
         </div>
+
       </div>
 
       <div class="card">
+
         <div class="card-image">
           <img src="IMG_0215.jpeg" alt="Alopecia and hair loss">
         </div>
+
         <div class="card-content">
           <h3>Alopecia Support</h3>
+
           <p>
             Medical hair solutions for individuals experiencing
             alopecia and related hair-loss conditions.
           </p>
         </div>
+
       </div>
 
       <div class="card">
+
         <div class="card-image">
           <img src="IMG_0214.jpeg" alt="Human hair solutions">
         </div>
+
         <div class="card-content">
           <h3>Human Hair Solutions</h3>
+
           <p>
             Premium human-hair options designed for a natural,
             individualized appearance.
           </p>
         </div>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 <section class="feature">
+
   <div class="container feature-grid">
 
     <div class="feature-image">
@@ -659,6 +701,7 @@ footer a{
     </div>
 
     <div>
+
       <h2>Custom Cranial Prostheses</h2>
 
       <p>
@@ -674,67 +717,106 @@ footer a{
         <li>Healthcare-focused client experience</li>
       </ul>
 
-      <a href="#consultations" class="button">Request Consultation</a>
+      <a href="https://buy.stripe.com/14A00lc1O10l12N0jD4ko02"
+         class="button">
+        Book Cranial Prosthesis Consultation
+      </a>
+
     </div>
 
   </div>
+
 </section>
 
 <section id="consultations" class="consultations">
+
   <div class="container">
 
     <div class="section-title">
+
       <h2>Consultations</h2>
+
       <p>
         Begin your medical hair journey with a personalized
         consultation.
       </p>
+
     </div>
 
     <div class="pricing">
 
       <div class="price-card">
+
         <h3>Medical Hair Consultation</h3>
+
         <div class="price">$75</div>
+
         <p>
           Discuss your hair-loss concerns, goals and potential
           medical hair solutions.
         </p>
+
         <br>
-        <a href="#contact" class="button">Get Started</a>
+
+        <a href="https://buy.stripe.com/dRm28te9WgZjfXH5DX4ko01"
+           class="button">
+          Book Now
+        </a>
+
       </div>
 
       <div class="price-card">
+
         <h3>Custom Cranial Prosthesis Consultation</h3>
+
         <div class="price">$150</div>
+
         <p>
           A focused consultation for clients considering a
           customized cranial prosthesis.
         </p>
+
         <br>
-        <a href="#contact" class="button">Get Started</a>
+
+        <a href="https://buy.stripe.com/14A00lc1O10l12N0jD4ko02"
+           class="button">
+          Book Now
+        </a>
+
       </div>
 
       <div class="price-card">
+
         <h3>Virtual Medical Hair Consultation</h3>
+
         <div class="price">$50</div>
+
         <p>
           Convenient virtual consultation for clients who prefer
           to begin remotely.
         </p>
+
         <br>
-        <a href="#contact" class="button">Get Started</a>
+
+        <a href="https://buy.stripe.com/28E3cx3vi5gBeTD7M54ko04"
+           class="button">
+          Book Now
+        </a>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
 <section>
+
   <div class="container feature-grid">
 
     <div>
+
       <h2 style="color:var(--purple);font-size:42px;">
         Human Hair Solutions
       </h2>
@@ -746,106 +828,145 @@ footer a{
 
       <br>
 
-      <a href="#contact" class="button">Learn More</a>
+      <a href="#contact" class="button">
+        Learn More
+      </a>
+
     </div>
 
     <div class="feature-image">
-      <img src="IMG_0214.jpeg" alt="Human hair medical solution">
+
+      <img src="IMG_0214.jpeg"
+           alt="Human hair medical solution">
+
     </div>
 
   </div>
+
 </section>
 
 <section class="feature">
+
   <div class="container feature-grid">
 
     <div class="feature-image">
-      <img src="IMG_0210.jpeg" alt="Hair follicle analysis">
+
+      <img src="IMG_0210.jpeg"
+           alt="Hair follicle analysis">
+
     </div>
 
     <div>
+
       <h2>Understanding Hair Loss</h2>
 
       <p>
-        Education is an important part of the medical hair
-        journey. Understanding potential causes of hair loss can
-        help clients have more informed conversations about their
-        options.
+        Education is an important part of the medical hair journey.
+        Understanding potential causes of hair loss can help clients
+        have more informed conversations about their options.
       </p>
 
       <br>
 
-      <a href="#education" class="button">Explore Education</a>
+      <a href="#education" class="button">
+        Explore Education
+      </a>
+
     </div>
 
   </div>
+
 </section>
 
 <section id="education">
+
   <div class="container">
 
     <div class="section-title">
+
       <h2>Client Education</h2>
+
       <p>
         Learn more about hair loss, consultations and medical hair
         solutions.
       </p>
+
     </div>
 
     <div class="education-grid">
 
       <div class="education-card">
+
         <div class="image">
-          <img src="IMG_0210.jpeg" alt="Hair follicle analysis">
+          <img src="IMG_0210.jpeg"
+               alt="Hair follicle analysis">
         </div>
+
         <div>
           <h3>Hair Follicle Analysis</h3>
+
           <p>
             Understanding the role of the hair follicle in hair
             growth and hair-loss discussions.
           </p>
         </div>
+
       </div>
 
       <div class="education-card">
+
         <div class="image">
-          <img src="IMG_0212.jpeg" alt="Understanding hair loss">
+          <img src="IMG_0212.jpeg"
+               alt="Understanding hair loss">
         </div>
+
         <div>
           <h3>Understanding Hair Loss</h3>
+
           <p>
             Explore common factors associated with different
             types of hair loss.
           </p>
         </div>
+
       </div>
 
       <div class="education-card">
+
         <div class="image">
-          <img src="IMG_0219.jpeg" alt="Expert evaluation">
+          <img src="IMG_0219.jpeg"
+               alt="Expert evaluation">
         </div>
+
         <div>
           <h3>Expert Evaluation</h3>
+
           <p>
-            Start with a personalized consultation focused on your
-            individual needs and goals.
+            Start with a personalized consultation focused on
+            your individual needs and goals.
           </p>
         </div>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
 <section class="process">
+
   <div class="container">
 
     <div class="section-title">
+
       <h2>Your Journey</h2>
+
       <p>
         A personalized experience from consultation to solution.
       </p>
+
     </div>
 
     <div class="steps">
@@ -877,9 +998,11 @@ footer a{
     </div>
 
   </div>
+
 </section>
 
 <section class="cta">
+
   <div class="container">
 
     <h2>Your Hair. Your Story. Your Solution.</h2>
@@ -889,9 +1012,12 @@ footer a{
       Mobile Genetix Medical Hair™.
     </p>
 
-    <a href="#contact" class="button">Contact Us</a>
+    <a href="#consultations" class="button">
+      Book a Consultation
+    </a>
 
   </div>
+
 </section>
 
 <section id="contact" class="contact">
@@ -899,11 +1025,14 @@ footer a{
   <div class="container">
 
     <div class="section-title">
+
       <h2>Connect With Mobile Genetix Medical Hair™</h2>
+
       <p>
         Ready to learn more? We're here to help you understand
         your options.
       </p>
+
     </div>
 
     <div class="contact-grid">
@@ -913,22 +1042,34 @@ footer a{
         <h3>Contact Information</h3>
 
         <div class="contact-item">
+
           <strong>Phone</strong>
-          <a href="tel:7349691449">734-969-1449</a>
+
+          <a href="tel:7349691449">
+            734-969-1449
+          </a>
+
         </div>
 
         <div class="contact-item">
+
           <strong>Email</strong>
+
           <a href="mailto:info@MobileGenetix.hair">
             info@MobileGenetix.hair
           </a>
+
         </div>
 
         <div class="contact-item">
+
           <strong>Website</strong>
-          <a href="https://MobileGenetix.hair" target="_blank">
+
+          <a href="https://MobileGenetix.hair"
+             target="_blank">
             MobileGenetix.hair
           </a>
+
         </div>
 
       </div>
@@ -939,15 +1080,15 @@ footer a{
 
         <p>
           Whether you are experiencing alopecia, medical-related
-          hair loss, genetic hair loss or another form of hair
-          loss, a consultation is the first step toward exploring
-          your options.
+          hair loss, genetic hair loss or another form of hair loss,
+          a consultation is the first step toward exploring your
+          options.
         </p>
 
         <br>
 
-        <a href="mailto:info@MobileGenetix.hair" class="button">
-          Request a Consultation
+        <a href="#consultations" class="button">
+          View Consultations
         </a>
 
       </div>
@@ -965,9 +1106,29 @@ footer a{
   <p>A Division of Mobile Genetix DNA</p>
 
   <div class="footer-contact">
-    <div>📞 <a href="tel:7349691449">734-969-1449</a></div>
-    <div>✉️ <a href="mailto:info@MobileGenetix.hair">info@MobileGenetix.hair</a></div>
-    <div>🌐 <a href="https://MobileGenetix.hair" target="_blank">MobileGenetix.hair</a></div>
+
+    <div>
+      📞
+      <a href="tel:7349691449">
+        734-969-1449
+      </a>
+    </div>
+
+    <div>
+      ✉️
+      <a href="mailto:info@MobileGenetix.hair">
+        info@MobileGenetix.hair
+      </a>
+    </div>
+
+    <div>
+      🌐
+      <a href="https://MobileGenetix.hair"
+         target="_blank">
+        MobileGenetix.hair
+      </a>
+    </div>
+
   </div>
 
   <div class="copyright">
