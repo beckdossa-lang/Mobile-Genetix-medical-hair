@@ -4,1642 +4,1891 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mobile Genetix Medical Hair™ | Medical Hair & Cranial Prosthesis Solutions</title>
+<title>Mobile Genetix Medical Hair™ | Personalized Medical Hair Solutions</title>
 
-<meta name="description" content="Mobile Genetix Medical Hair™ provides personalized medical hair consultations, custom cranial prostheses, medical wigs and human-hair solutions.">
+<meta name="description" content="Mobile Genetix Medical Hair™ provides personalized medical hair consultations, cranial prostheses, medical wigs and human-hair solutions.">
 
 <style>
+
 :root{
-  --purple:#241336;
-  --deep-purple:#170d22;
-  --gold:#D8B66A;
-  --cream:#F8F5F1;
-  --soft:#FAF8FC;
-  --text:#241336;
-  --muted:#6C6670;
-  --white:#FFFFFF;
-  --border:rgba(36,19,54,.10);
+--purple:#241336;
+--deep:#140B1D;
+--gold:#D8B66A;
+--cream:#F7F3EE;
+--soft:#FAF8FC;
+--text:#241336;
+--muted:#6B6570;
+--white:#FFFFFF;
+--border:rgba(36,19,54,.12);
 }
 
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.7;
-  overflow-x:hidden;
-}
-
-a{
-  color:inherit;
-  text-decoration:none;
+font-family:Arial,Helvetica,sans-serif;
+color:var(--text);
+background:white;
+line-height:1.7;
+overflow-x:hidden;
 }
 
 img{
-  width:100%;
-  display:block;
+width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
 }
 
 .container{
-  width:90%;
-  max-width:1200px;
-  margin:auto;
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* NAVIGATION */
 
 header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(255,255,255,.94);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--border);
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(255,255,255,.96);
+backdrop-filter:blur(14px);
+border-bottom:1px solid var(--border);
 }
 
 .nav{
-  min-height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+min-height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 .logo{
-  font-size:20px;
-  font-weight:800;
-  letter-spacing:1.5px;
-  line-height:1.2;
+font-size:20px;
+font-weight:800;
+letter-spacing:1.5px;
+line-height:1.2;
 }
 
 .logo span{
-  display:block;
-  font-size:10px;
-  letter-spacing:3px;
-  font-weight:600;
-  margin-top:4px;
+display:block;
+font-size:10px;
+letter-spacing:3px;
+font-weight:600;
+margin-top:4px;
 }
 
 .nav-links{
-  display:flex;
-  align-items:center;
-  gap:27px;
-  font-size:13px;
-  font-weight:700;
-}
-
-.nav-links a{
-  transition:.25s ease;
+display:flex;
+align-items:center;
+gap:26px;
+font-size:13px;
+font-weight:700;
 }
 
 .nav-links a:hover{
-  color:var(--gold);
+color:var(--gold);
 }
 
 .nav-cta{
-  background:var(--purple);
-  color:#fff;
-  padding:12px 20px;
-  border-radius:50px;
+background:var(--purple);
+color:white;
+padding:12px 21px;
+border-radius:50px;
 }
 
 .menu-btn{
-  display:none;
-  border:0;
-  background:none;
-  font-size:28px;
-  color:var(--purple);
-  cursor:pointer;
+display:none;
+border:0;
+background:none;
+font-size:28px;
+color:var(--purple);
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero{
-  min-height:720px;
-  display:flex;
-  align-items:center;
-  position:relative;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248,245,241,.98) 0%,
-      rgba(248,245,241,.94) 38%,
-      rgba(248,245,241,.45) 68%,
-      rgba(248,245,241,.12) 100%
-    ),
-    url("https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=2000&q=85");
-  background-size:cover;
-  background-position:center;
+min-height:720px;
+display:flex;
+align-items:center;
+position:relative;
+background:
+linear-gradient(
+90deg,
+rgba(248,245,241,.97) 0%,
+rgba(248,245,241,.91) 38%,
+rgba(248,245,241,.45) 68%,
+rgba(248,245,241,.08) 100%
+),
+url("https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=2000&q=90");
+
+background-size:cover;
+background-position:center;
 }
 
 .hero-content{
-  max-width:700px;
-  padding:110px 0;
+max-width:700px;
+padding:110px 0;
 }
 
 .eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:11px;
-  font-weight:800;
-  color:#8A6934;
-  margin-bottom:22px;
-}
-
-.eyebrow:before{
-  content:"";
-  width:35px;
-  height:1px;
-  background:var(--gold);
+text-transform:uppercase;
+letter-spacing:4px;
+font-size:11px;
+font-weight:800;
+color:#8A6934;
+margin-bottom:20px;
 }
 
 .hero h1{
-  font-size:clamp(46px,7vw,82px);
-  line-height:1.02;
-  letter-spacing:-3px;
-  margin-bottom:28px;
+font-size:clamp(46px,7vw,82px);
+line-height:1.02;
+letter-spacing:-3px;
+margin-bottom:25px;
 }
 
 .hero h1 span{
-  color:var(--gold);
+color:var(--gold);
 }
 
 .hero p{
-  max-width:650px;
-  font-size:18px;
-  color:#514B53;
-  margin-bottom:35px;
+max-width:650px;
+font-size:18px;
+color:#514B53;
+margin-bottom:32px;
 }
 
 .buttons{
-  display:flex;
-  gap:14px;
-  flex-wrap:wrap;
+display:flex;
+gap:14px;
+flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-block;
-  padding:15px 26px;
-  border-radius:50px;
-  font-size:14px;
-  font-weight:800;
-  transition:.3s ease;
+display:inline-block;
+padding:15px 26px;
+border-radius:50px;
+font-size:14px;
+font-weight:800;
+transition:.3s;
 }
 
 .btn-primary{
-  background:var(--purple);
-  color:#fff;
-  box-shadow:0 15px 35px rgba(36,19,54,.20);
+background:var(--purple);
+color:white;
+box-shadow:0 15px 35px rgba(36,19,54,.2);
 }
 
 .btn-primary:hover{
-  transform:translateY(-3px);
-  box-shadow:0 20px 40px rgba(36,19,54,.28);
+transform:translateY(-3px);
 }
 
 .btn-outline{
-  border:1px solid var(--purple);
-  color:var(--purple);
-  background:rgba(255,255,255,.75);
+border:1px solid var(--purple);
+color:var(--purple);
+background:white;
 }
 
-.btn-outline:hover{
-  background:var(--purple);
-  color:#fff;
+/* BRAND STRIP */
+
+.brand-strip{
+background:var(--purple);
+color:white;
+padding:22px;
+text-align:center;
+font-size:14px;
 }
 
-/* =========================
-   INTRO STRIP
-========================= */
-
-.intro-strip{
-  background:var(--purple);
-  color:#fff;
-  padding:24px 0;
+.brand-strip strong{
+color:var(--gold);
 }
 
-.intro-strip-inner{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:25px;
-  text-align:center;
-  flex-wrap:wrap;
-}
-
-.intro-strip strong{
-  color:var(--gold);
-}
-
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section{
-  padding:105px 0;
+padding:105px 0;
 }
 
 .section-light{
-  background:var(--soft);
+background:var(--soft);
 }
 
 .section-cream{
-  background:var(--cream);
+background:var(--cream);
 }
 
-.section-heading{
-  max-width:750px;
-  margin-bottom:55px;
+.label{
+text-transform:uppercase;
+letter-spacing:3px;
+font-size:11px;
+font-weight:800;
+color:#8A6934;
+margin-bottom:14px;
 }
 
-.section-heading.center{
-  margin-left:auto;
-  margin-right:auto;
-  text-align:center;
+.heading{
+max-width:760px;
+margin-bottom:50px;
 }
 
-.section-label{
-  color:#8A6934;
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:11px;
-  font-weight:800;
-  margin-bottom:14px;
+.heading.center{
+margin-left:auto;
+margin-right:auto;
+text-align:center;
 }
 
-.section-heading h2{
-  font-size:clamp(34px,5vw,54px);
-  line-height:1.1;
-  letter-spacing:-1.5px;
-  margin-bottom:18px;
+.heading h2{
+font-size:clamp(35px,5vw,56px);
+line-height:1.08;
+letter-spacing:-1.5px;
+margin-bottom:18px;
 }
 
-.section-heading p{
-  color:var(--muted);
-  font-size:16px;
+.heading p{
+color:var(--muted);
+font-size:16px;
 }
 
-/* =========================
-   ABOUT
-========================= */
+/* SCIENCE */
 
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-  align-items:center;
+.science-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:65px;
+align-items:center;
 }
 
-.about-image{
-  height:600px;
-  overflow:hidden;
-  border-radius:28px;
-  position:relative;
+.science-image{
+height:570px;
+border-radius:28px;
+overflow:hidden;
 }
 
-.about-image img{
-  height:100%;
-  object-fit:cover;
-  object-position:center;
+.science-image img{
+height:100%;
+object-fit:cover;
 }
 
-.about-image:after{
-  content:"";
-  position:absolute;
-  inset:18px;
-  border:1px solid rgba(255,255,255,.55);
-  border-radius:20px;
-  pointer-events:none;
+.science-copy p{
+color:var(--muted);
+margin-bottom:20px;
 }
 
-.about-content p{
-  color:var(--muted);
-  margin-bottom:22px;
+.science-points{
+margin-top:30px;
+display:grid;
+gap:14px;
 }
 
-.signature{
-  margin-top:30px;
-  padding-top:22px;
-  border-top:1px solid var(--border);
+.science-point{
+display:flex;
+gap:14px;
+align-items:flex-start;
 }
 
-.signature strong{
-  display:block;
-  font-size:18px;
+.science-point span{
+color:var(--gold);
+font-size:20px;
 }
 
-.signature span{
-  color:#8A6934;
-  font-size:13px;
+/* HAIR LOSS */
+
+.loss-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
 }
 
-/* =========================
-   SOLUTIONS
-========================= */
-
-.solution-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:28px;
+.loss-card{
+background:white;
+border-radius:22px;
+overflow:hidden;
+border:1px solid var(--border);
+box-shadow:0 15px 40px rgba(36,19,54,.06);
 }
 
-.solution-card{
-  background:#fff;
-  border-radius:24px;
-  overflow:hidden;
-  border:1px solid var(--border);
-  box-shadow:0 15px 40px rgba(36,19,54,.06);
-  transition:.35s ease;
+.loss-card img{
+height:280px;
+object-fit:cover;
 }
 
-.solution-card:hover{
-  transform:translateY(-7px);
-  box-shadow:0 25px 55px rgba(36,19,54,.12);
+.loss-card-content{
+padding:28px;
 }
 
-.solution-image{
-  height:300px;
-  overflow:hidden;
+.loss-card h3{
+font-size:23px;
+margin-bottom:10px;
 }
 
-.solution-image img{
-  height:100%;
-  object-fit:cover;
-  transition:.5s ease;
+.loss-card p{
+color:var(--muted);
+font-size:14px;
 }
 
-.solution-card:hover .solution-image img{
-  transform:scale(1.04);
+/* CONSULTATION */
+
+.consultation{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:65px;
+align-items:center;
 }
 
-.solution-content{
-  padding:32px;
+.consultation-image{
+height:560px;
+border-radius:28px;
+overflow:hidden;
 }
 
-.solution-content h3{
-  font-size:25px;
-  margin-bottom:10px;
+.consultation-image img{
+height:100%;
+object-fit:cover;
 }
 
-.solution-content p{
-  color:var(--muted);
-  font-size:15px;
-  margin-bottom:18px;
+.consultation-copy p{
+color:var(--muted);
+margin-bottom:22px;
 }
 
-.learn-more{
-  font-size:13px;
-  font-weight:800;
-  color:#8A6934;
-  letter-spacing:.5px;
+.check-list{
+display:grid;
+gap:15px;
+margin:28px 0;
 }
 
-/* =========================
-   FEATURE BANNER
-========================= */
+.check{
+display:flex;
+gap:12px;
+font-weight:700;
+}
 
-.feature-banner{
-  min-height:520px;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(36,19,54,.96),
-      rgba(36,19,54,.80),
-      rgba(36,19,54,.30)
-    ),
-    url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2000&q=85");
-  background-size:cover;
-  background-position:center;
-  color:#fff;
+.check span{
+color:var(--gold);
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:28px;
+}
+
+.service{
+background:white;
+border-radius:25px;
+overflow:hidden;
+border:1px solid var(--border);
+box-shadow:0 15px 40px rgba(36,19,54,.06);
+transition:.3s;
+}
+
+.service:hover{
+transform:translateY(-7px);
+}
+
+.service-image{
+height:320px;
+overflow:hidden;
+}
+
+.service-image img{
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.service:hover img{
+transform:scale(1.04);
+}
+
+.service-content{
+padding:32px;
+}
+
+.service-content h3{
+font-size:27px;
+margin-bottom:10px;
+}
+
+.service-content p{
+color:var(--muted);
+font-size:15px;
+margin-bottom:18px;
+}
+
+.service-link{
+font-size:12px;
+font-weight:800;
+letter-spacing:1px;
+color:#8A6934;
+}
+
+/* FEATURE */
+
+.feature{
+min-height:520px;
+display:flex;
+align-items:center;
+background:
+linear-gradient(
+90deg,
+rgba(36,19,54,.97),
+rgba(36,19,54,.78),
+rgba(36,19,54,.25)
+),
+url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2000&q=90");
+
+background-size:cover;
+background-position:center;
+color:white;
 }
 
 .feature-content{
-  max-width:650px;
-}
-
-.feature-content .section-label{
-  color:var(--gold);
+max-width:650px;
 }
 
 .feature-content h2{
-  font-size:clamp(36px,5vw,58px);
-  line-height:1.08;
-  margin-bottom:20px;
+font-size:clamp(38px,5vw,60px);
+line-height:1.08;
+margin-bottom:20px;
 }
 
 .feature-content p{
-  color:rgba(255,255,255,.82);
-  margin-bottom:28px;
+color:rgba(255,255,255,.82);
+margin-bottom:28px;
 }
 
-/* =========================
-   CONSULTATIONS
-========================= */
-
-.consultation-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:24px;
-}
-
-.consultation-card{
-  padding:35px;
-  background:#fff;
-  border:1px solid var(--border);
-  border-radius:22px;
-  transition:.3s ease;
-}
-
-.consultation-card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 20px 40px rgba(36,19,54,.09);
-}
-
-.consultation-card .number{
-  color:var(--gold);
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:3px;
-  margin-bottom:20px;
-}
-
-.consultation-card h3{
-  font-size:22px;
-  margin-bottom:12px;
-}
-
-.consultation-card p{
-  color:var(--muted);
-  font-size:14px;
-  margin-bottom:20px;
-}
-
-.consultation-card strong{
-  font-size:20px;
-}
-
-/* =========================
-   PROCESS
-========================= */
+/* PROCESS */
 
 .process{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 }
 
 .step{
-  background:#fff;
-  padding:30px;
-  border-radius:18px;
-  border-top:3px solid var(--gold);
-  box-shadow:0 10px 30px rgba(36,19,54,.05);
+background:white;
+padding:30px;
+border-radius:20px;
+border-top:3px solid var(--gold);
+box-shadow:0 10px 30px rgba(36,19,54,.05);
 }
 
 .step-number{
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:3px;
-  color:#8A6934;
-  margin-bottom:12px;
+font-size:11px;
+letter-spacing:3px;
+font-weight:800;
+color:#8A6934;
+margin-bottom:12px;
 }
 
 .step h3{
-  font-size:19px;
-  margin-bottom:10px;
+font-size:19px;
+margin-bottom:10px;
 }
 
 .step p{
-  color:var(--muted);
-  font-size:14px;
+font-size:14px;
+color:var(--muted);
 }
 
-/* =========================
-   TRUST
-========================= */
+/* CONSULTATION PRICING */
 
-.trust{
-  text-align:center;
+.consultations{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
 }
 
-.trust-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+.consult-card{
+padding:35px;
+background:white;
+border:1px solid var(--border);
+border-radius:22px;
 }
 
-.trust-card{
-  padding:35px 25px;
-  border:1px solid var(--border);
-  border-radius:20px;
-  background:#fff;
+.consult-card .number{
+color:var(--gold);
+font-weight:800;
+letter-spacing:3px;
+font-size:12px;
+margin-bottom:18px;
 }
 
-.trust-card .icon{
-  font-size:30px;
-  margin-bottom:15px;
+.consult-card h3{
+font-size:22px;
+margin-bottom:12px;
 }
 
-.trust-card h3{
-  margin-bottom:8px;
+.consult-card p{
+font-size:14px;
+color:var(--muted);
+margin-bottom:20px;
 }
 
-.trust-card p{
-  color:var(--muted);
-  font-size:14px;
+.price{
+font-size:22px;
+font-weight:800;
 }
 
-/* =========================
-   FAQ
-========================= */
+/* EDUCATION */
+
+.education{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.education-image{
+height:520px;
+border-radius:28px;
+overflow:hidden;
+}
+
+.education-image img{
+height:100%;
+object-fit:cover;
+}
+
+.education-copy p{
+color:var(--muted);
+margin-bottom:20px;
+}
+
+/* FOUNDER */
+
+.founder{
+display:grid;
+grid-template-columns:420px 1fr;
+gap:65px;
+align-items:center;
+}
+
+.founder-image{
+height:520px;
+border-radius:28px;
+overflow:hidden;
+background:var(--cream);
+}
+
+.founder-image img{
+height:100%;
+object-fit:cover;
+}
+
+.founder-copy p{
+color:var(--muted);
+margin-bottom:20px;
+}
+
+.signature{
+margin-top:30px;
+padding-top:20px;
+border-top:1px solid var(--border);
+}
+
+.signature strong{
+display:block;
+font-size:19px;
+}
+
+.signature span{
+color:#8A6934;
+font-size:13px;
+}
+
+/* FAQ */
 
 .faq{
-  max-width:850px;
-  margin:auto;
+max-width:850px;
+margin:auto;
 }
 
 details{
-  border-bottom:1px solid #ddd;
-  padding:22px 0;
+border-bottom:1px solid #ddd;
+padding:22px 0;
 }
 
 summary{
-  cursor:pointer;
-  font-weight:800;
-  font-size:16px;
+cursor:pointer;
+font-weight:800;
+font-size:16px;
 }
 
 details p{
-  padding-top:14px;
-  color:var(--muted);
-  font-size:15px;
+padding-top:14px;
+color:var(--muted);
+font-size:15px;
 }
 
-/* =========================
-   CTA
-========================= */
+/* CTA */
 
 .cta{
-  background:linear-gradient(135deg,#241336,#3A2050);
-  color:#fff;
-  text-align:center;
+background:linear-gradient(135deg,#241336,#3A2050);
+color:white;
+text-align:center;
 }
 
 .cta h2{
-  max-width:750px;
-  margin:0 auto 18px;
-  font-size:clamp(36px,5vw,58px);
-  line-height:1.08;
+max-width:760px;
+margin:0 auto 18px;
+font-size:clamp(38px,5vw,60px);
+line-height:1.08;
 }
 
 .cta p{
-  max-width:680px;
-  margin:0 auto 30px;
-  color:rgba(255,255,255,.82);
+max-width:680px;
+margin:0 auto 30px;
+color:rgba(255,255,255,.82);
 }
 
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact-box{
-  text-align:center;
-  padding:65px 25px;
-  background:var(--soft);
-  border-radius:28px;
+text-align:center;
+padding:65px 25px;
+background:var(--soft);
+border-radius:28px;
 }
 
 .contact-box h2{
-  font-size:40px;
-  margin-bottom:15px;
+font-size:42px;
+margin-bottom:15px;
 }
 
 .contact-box p{
-  color:var(--muted);
-  margin-bottom:25px;
+color:var(--muted);
+margin-bottom:25px;
 }
 
 .contact-details{
-  display:flex;
-  justify-content:center;
-  gap:25px;
-  flex-wrap:wrap;
-  margin-top:25px;
-  font-size:14px;
-  font-weight:700;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:25px;
+font-size:14px;
+font-weight:700;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-  background:var(--deep-purple);
-  color:#fff;
-  padding:50px 0 30px;
+background:var(--deep);
+color:white;
+padding:50px 0 30px;
 }
 
 .footer-top{
-  display:flex;
-  justify-content:space-between;
-  gap:40px;
-  flex-wrap:wrap;
-  padding-bottom:35px;
-  border-bottom:1px solid rgba(255,255,255,.12);
+display:flex;
+justify-content:space-between;
+gap:40px;
+flex-wrap:wrap;
+padding-bottom:35px;
+border-bottom:1px solid rgba(255,255,255,.12);
 }
 
 .footer-brand{
-  max-width:400px;
+max-width:420px;
 }
 
 .footer-brand h3{
-  font-size:22px;
-  margin-bottom:10px;
+font-size:23px;
+margin-bottom:10px;
 }
 
 .footer-brand p{
-  color:rgba(255,255,255,.65);
-  font-size:13px;
+font-size:13px;
+color:rgba(255,255,255,.65);
 }
 
 .footer-links{
-  display:flex;
-  gap:35px;
-  flex-wrap:wrap;
+display:flex;
+gap:30px;
+flex-wrap:wrap;
 }
 
 .footer-links a{
-  font-size:13px;
-  color:rgba(255,255,255,.75);
+font-size:13px;
+color:rgba(255,255,255,.75);
 }
 
 .footer-links a:hover{
-  color:var(--gold);
+color:var(--gold);
 }
 
 .footer-bottom{
-  padding-top:25px;
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
-  color:rgba(255,255,255,.55);
-  font-size:12px;
+padding-top:25px;
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+font-size:12px;
+color:rgba(255,255,255,.55);
 }
 
 .gold{
-  color:var(--gold);
+color:var(--gold);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media(max-width:850px){
 
-  .nav-links{
-    display:none;
-    position:absolute;
-    top:82px;
-    left:0;
-    right:0;
-    background:#fff;
-    flex-direction:column;
-    align-items:stretch;
-    padding:25px;
-    gap:0;
-    border-bottom:1px solid #eee;
-    box-shadow:0 15px 35px rgba(36,19,54,.08);
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
-
-  .nav-links a{
-    padding:13px 0;
-  }
-
-  .nav-cta{
-    text-align:center;
-    margin-top:8px;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .hero{
-    min-height:650px;
-    background:
-      linear-gradient(
-        180deg,
-        rgba(248,245,241,.92),
-        rgba(248,245,241,.78)
-      ),
-      url("https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=85");
-    background-position:center;
-  }
-
-  .hero-content{
-    padding:75px 0;
-  }
-
-  .hero h1{
-    font-size:48px;
-    letter-spacing:-2px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  section{
-    padding:75px 0;
-  }
-
-  .about-grid,
-  .solution-grid{
-    grid-template-columns:1fr;
-  }
-
-  .about-image{
-    height:450px;
-  }
-
-  .consultation-grid,
-  .trust-grid{
-    grid-template-columns:1fr;
-  }
-
-  .process{
-    grid-template-columns:1fr;
-  }
-
-  .feature-banner{
-    min-height:600px;
-  }
-
-  .contact-box h2{
-    font-size:32px;
-  }
-
-  .footer-top{
-    flex-direction:column;
-  }
+.nav-links{
+display:none;
+position:absolute;
+top:82px;
+left:0;
+right:0;
+background:white;
+flex-direction:column;
+padding:25px;
+gap:0;
+border-bottom:1px solid #eee;
 }
+
+.nav-links.active{
+display:flex;
+}
+
+.nav-links a{
+padding:13px 0;
+}
+
+.nav-cta{
+text-align:center;
+margin-top:8px;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero{
+min-height:650px;
+background:
+linear-gradient(
+180deg,
+rgba(248,245,241,.93),
+rgba(248,245,241,.76)
+),
+url("https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=90");
+
+background-position:center;
+}
+
+.hero-content{
+padding:75px 0;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+section{
+padding:75px 0;
+}
+
+.science-grid,
+.consultation,
+.education,
+.founder{
+grid-template-columns:1fr;
+}
+
+.loss-grid,
+.consultations,
+.services{
+grid-template-columns:1fr;
+}
+
+.process{
+grid-template-columns:1fr;
+}
+
+.science-image,
+.consultation-image,
+.education-image{
+height:430px;
+}
+
+.founder-image{
+height:450px;
+}
+
+.feature{
+min-height:600px;
+}
+
+.contact-box h2{
+font-size:32px;
+}
+
+.footer-top{
+flex-direction:column;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
-
 <header>
-  <div class="container nav">
 
-    <a href="#home" class="logo">
-      MOBILE GENETIX
-      <span>MEDICAL HAIR™</span>
-    </a>
+<div class="container nav">
 
-    <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">
-      ☰
-    </button>
+<a href="#home" class="logo">
+MOBILE GENETIX
+<span>MEDICAL HAIR™</span>
+</a>
 
-    <nav class="nav-links" id="navLinks">
-      <a href="#about" onclick="closeMenu()">About</a>
-      <a href="#solutions" onclick="closeMenu()">Solutions</a>
-      <a href="#consultations" onclick="closeMenu()">Consultations</a>
-      <a href="#process" onclick="closeMenu()">Process</a>
-      <a href="#faq" onclick="closeMenu()">FAQs</a>
-      <a href="#contact" class="nav-cta" onclick="closeMenu()">Book a Consultation</a>
-    </nav>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-  </div>
+<nav class="nav-links" id="navLinks">
+
+<a href="#about" onclick="closeMenu()">About</a>
+<a href="#hairloss" onclick="closeMenu()">Hair Loss</a>
+<a href="#solutions" onclick="closeMenu()">Solutions</a>
+<a href="#consultations" onclick="closeMenu()">Consultations</a>
+<a href="#education" onclick="closeMenu()">Education</a>
+<a href="#contact" class="nav-cta" onclick="closeMenu()">Book Consultation</a>
+
+</nav>
+
+</div>
+
 </header>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
-  <div class="container">
+<div class="container">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-      <div class="eyebrow">
-        Medical Hair • Personalized Care
-      </div>
+<div class="eyebrow">
+Medical Hair • Personalized Care
+</div>
 
-      <h1>
-        Your Hair.<br>
-        Your <span>Confidence.</span><br>
-        Your Care.
-      </h1>
+<h1>
+Your Hair.<br>
+Your <span>Confidence.</span><br>
+Your Care.
+</h1>
 
-      <p>
-        Personalized medical hair solutions designed for individuals
-        experiencing hair loss related to alopecia, medical treatment,
-        autoimmune conditions, genetic hair loss and other causes.
-      </p>
+<p>
+Personalized medical hair solutions for individuals experiencing hair loss associated with alopecia, medical treatment, autoimmune conditions, genetic hair loss and other causes.
+</p>
 
-      <div class="buttons">
+<div class="buttons">
 
-        <a href="#consultations" class="btn btn-primary">
-          Explore Consultations
-        </a>
+<a href="#consultations" class="btn btn-primary">
+Explore Consultations
+</a>
 
-        <a href="#solutions" class="btn btn-outline">
-          Explore Solutions
-        </a>
+<a href="#solutions" class="btn btn-outline">
+Explore Solutions
+</a>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
 
-<!-- =========================
-     INTRO STRIP
-========================= -->
+<div class="brand-strip">
 
-<div class="intro-strip">
-
-  <div class="container intro-strip-inner">
-
-    <div>
-      <strong>Mobile Genetix Medical Hair™</strong>
-      &nbsp; | &nbsp;
-      A specialized division of Mobile Genetix™
-    </div>
-
-  </div>
+<strong>Mobile Genetix Medical Hair™</strong>
+&nbsp; | &nbsp;
+A specialized division of Mobile Genetix™
 
 </div>
 
 
-<!-- =========================
-     ABOUT
-========================= -->
+<!-- SCIENCE -->
 
 <section id="about">
 
-  <div class="container">
+<div class="container">
 
-    <div class="about-grid">
+<div class="science-grid">
 
-      <div class="about-image">
+<div class="science-image">
 
-        <img
-          src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=1200&q=85"
-          alt="Woman representing confidence and personalized beauty"
-        >
+<img
+src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=90"
+alt="Healthcare professional working in a medical environment">
 
-      </div>
+</div>
 
-      <div class="about-content">
+<div class="science-copy">
 
-        <div class="section-label">
-          Beyond Traditional Hair Solutions
-        </div>
+<div class="label">
+Science + Personalized Care
+</div>
 
-        <h2>
-          Medical hair care with a more personal approach.
-        </h2>
+<div class="heading">
 
-        <p>
-          Mobile Genetix Medical Hair™ was created to provide a more
-          thoughtful experience for people navigating hair loss.
-        </p>
+<h2>
+Medical hair care with a more personal approach.
+</h2>
 
-        <p>
-          Our approach combines healthcare-focused education,
-          personalized consultations and premium hair solutions to help
-          clients identify options that align with their individual
-          needs, lifestyle and goals.
-        </p>
+</div>
 
-        <p>
-          From medical wigs to custom cranial prostheses and
-          human-hair solutions, every experience begins with
-          understanding the person behind the hair loss.
-        </p>
+<p>
+Hair loss can be deeply personal. It can affect confidence, identity, lifestyle and everyday experiences.
+</p>
 
-        <div class="signature">
+<p>
+Mobile Genetix Medical Hair™ was created to provide a more thoughtful experience for individuals navigating hair loss.
+</p>
 
-          <strong>Antionett Beck-Doss</strong>
+<p>
+Our approach combines healthcare-focused education, personalized consultation and premium medical hair solutions.
+</p>
 
-          <span>
-            Founder & CEO, Mobile Genetix™
-          </span>
+<div class="science-points">
 
-        </div>
+<div class="science-point">
+<span>✦</span>
+<div>Personalized consultations</div>
+</div>
 
-      </div>
+<div class="science-point">
+<span>✦</span>
+<div>Medical hair education</div>
+</div>
 
-    </div>
+<div class="science-point">
+<span>✦</span>
+<div>Premium hair solutions</div>
+</div>
 
-  </div>
+<div class="science-point">
+<span>✦</span>
+<div>Individualized client experience</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- =========================
-     SOLUTIONS
-========================= -->
+<!-- HAIR LOSS -->
 
-<section class="section-light" id="solutions">
+<section class="section-light" id="hairloss">
 
-  <div class="container">
+<div class="container">
 
-    <div class="section-heading center">
+<div class="heading center">
 
-      <div class="section-label">
-        Our Solutions
-      </div>
+<div class="label">
+Understanding Hair Loss
+</div>
 
-      <h2>
-        Personalized solutions for every journey.
-      </h2>
+<h2>
+Hair loss isn't always “just hair loss.”
+</h2>
 
-      <p>
-        Explore specialized medical hair solutions designed with
-        comfort, confidence and individual needs in mind.
-      </p>
+<p>
+Understanding the experience behind hair loss is an important part of choosing appropriate solutions.
+</p>
 
-    </div>
+</div>
 
 
-    <div class="solution-grid">
-
-      <article class="solution-card">
-
-        <div class="solution-image">
-
-          <img
-            src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=85"
-            alt="Medical hair and human hair solution"
-          >
-
-        </div>
-
-        <div class="solution-content">
-
-          <h3>Medical Wigs</h3>
-
-          <p>
-            Premium wig solutions for individuals experiencing
-            medically related hair loss, designed to support
-            confidence and everyday comfort.
-          </p>
-
-          <span class="learn-more">
-            EXPLORE MEDICAL WIGS →
-          </span>
-
-        </div>
-
-      </article>
+<div class="loss-grid">
 
 
-      <article class="solution-card">
+<article class="loss-card">
 
-        <div class="solution-image">
+<img
+src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=1200&q=90"
+alt="Woman experiencing hair loss">
 
-          <img
-            src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=85"
-            alt="Custom hair solution"
-          >
+<div class="loss-card-content">
 
-        </div>
+<h3>
+Hair Loss
+</h3>
 
-        <div class="solution-content">
+<p>
+Hair loss can occur for many different reasons and can affect people in different ways.
+</p>
 
-          <h3>Custom Cranial Prostheses</h3>
+</div>
 
-          <p>
-            Personalized cranial prosthesis solutions created for
-            individuals experiencing significant hair loss.
-          </p>
-
-          <span class="learn-more">
-            EXPLORE CRANIAL PROSTHESES →
-          </span>
-
-        </div>
-
-      </article>
+</article>
 
 
-      <article class="solution-card">
+<article class="loss-card">
 
-        <div class="solution-image">
+<img
+src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=90"
+alt="Woman discussing personal healthcare concerns">
 
-          <img
-            src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=85"
-            alt="Human hair solution"
-          >
+<div class="loss-card-content">
 
-        </div>
+<h3>
+Your Story Matters
+</h3>
 
-        <div class="solution-content">
+<p>
+A personalized consultation creates space to discuss your individual experience and goals.
+</p>
 
-          <h3>Human-Hair Solutions</h3>
+</div>
 
-          <p>
-            Carefully selected human-hair options designed around
-            individual preferences, lifestyle and desired appearance.
-          </p>
-
-          <span class="learn-more">
-            EXPLORE HUMAN HAIR →
-          </span>
-
-        </div>
-
-      </article>
+</article>
 
 
-      <article class="solution-card">
+<article class="loss-card">
 
-        <div class="solution-image">
+<img
+src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=90"
+alt="Healthcare consultation">
 
-          <img
-            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=85"
-            alt="Medical consultation"
-          >
+<div class="loss-card-content">
 
-        </div>
+<h3>
+Personalized Care
+</h3>
 
-        <div class="solution-content">
+<p>
+Our goal is to help clients understand available medical hair options and next steps.
+</p>
 
-          <h3>Medical Hair Consultations</h3>
+</div>
 
-          <p>
-            Begin with a personalized consultation to discuss your
-            hair-loss experience and potential solutions.
-          </p>
+</article>
 
-          <span class="learn-more">
-            START YOUR CONSULTATION →
-          </span>
 
-        </div>
+</div>
 
-      </article>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- =========================
-     FEATURE
-========================= -->
-
-<section class="feature-banner">
-
-  <div class="container">
-
-    <div class="feature-content">
-
-      <div class="section-label">
-        Designed Around You
-      </div>
-
-      <h2>
-        Because hair loss is personal.
-      </h2>
-
-      <p>
-        Your experience deserves more than a one-size-fits-all
-        solution. Our consultations are designed to help you
-        understand your options and move forward with confidence.
-      </p>
-
-      <a href="#consultations" class="btn btn-primary">
-        Begin Your Consultation
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     CONSULTATIONS
-========================= -->
-
-<section id="consultations">
-
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div class="section-label">
-        Consultations
-      </div>
-
-      <h2>
-        Your first step starts with a conversation.
-      </h2>
-
-      <p>
-        Choose the consultation experience that works best for you.
-      </p>
-
-    </div>
-
-
-    <div class="consultation-grid">
-
-      <article class="consultation-card">
-
-        <div class="number">01</div>
-
-        <h3>Medical Hair Consultation</h3>
-
-        <p>
-          A personalized consultation to discuss your hair-loss
-          experience and explore appropriate medical hair solutions.
-        </p>
-
-        <strong>$75</strong>
-
-      </article>
-
-
-      <article class="consultation-card">
-
-        <div class="number">02</div>
-
-        <h3>Custom Cranial Prosthesis Consultation</h3>
-
-        <p>
-          A specialized consultation for clients considering a
-          custom cranial prosthesis.
-        </p>
-
-        <strong>$150</strong>
-
-      </article>
-
-
-      <article class="consultation-card">
-
-        <div class="number">03</div>
-
-        <h3>Virtual Medical Hair Consultation</h3>
-
-        <p>
-          Meet virtually from wherever you are to discuss your
-          needs and learn more about available solutions.
-        </p>
-
-        <strong>$50</strong>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     PROCESS
-========================= -->
-
-<section class="section-light" id="process">
-
-  <div class="container">
-
-    <div class="section-heading center">
-
-      <div class="section-label">
-        The Experience
-      </div>
-
-      <h2>
-        Simple. Personal. Intentional.
-      </h2>
-
-      <p>
-        We designed the experience to help you move through your
-        medical hair journey with clarity.
-      </p>
-
-    </div>
-
-
-    <div class="process">
-
-      <div class="step">
-
-        <div class="step-number">STEP 01</div>
-
-        <h3>Choose Your Consultation</h3>
-
-        <p>
-          Select the consultation that best matches your needs.
-        </p>
-
-      </div>
-
-
-      <div class="step">
-
-        <div class="step-number">STEP 02</div>
-
-        <h3>Share Your Story</h3>
-
-        <p>
-          Complete your intake information so we can understand
-          your individual experience.
-        </p>
-
-      </div>
-
-
-      <div class="step">
-
-        <div class="step-number">STEP 03</div>
-
-        <h3>Explore Your Options</h3>
-
-        <p>
-          Discuss potential medical hair solutions during your
-          personalized consultation.
-        </p>
-
-      </div>
-
-
-      <div class="step">
-
-        <div class="step-number">STEP 04</div>
-
-        <h3>Move Forward With Confidence</h3>
-
-        <p>
-          Receive guidance on the next steps toward your selected
-          solution.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     TRUST
-========================= -->
+<!-- CONSULTATION -->
 
 <section>
 
-  <div class="container trust">
+<div class="container">
 
-    <div class="section-heading center">
+<div class="consultation">
 
-      <div class="section-label">
-        Our Commitment
-      </div>
+<div class="consultation-image">
 
-      <h2>
-        Healthcare-focused. Person-centered.
-      </h2>
+<img
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=90"
+alt="Patient and healthcare professional during a consultation">
 
-    </div>
+</div>
 
 
-    <div class="trust-grid">
+<div class="consultation-copy">
 
-      <div class="trust-card">
+<div class="label">
+Medical Hair Consultation
+</div>
 
-        <div class="icon">✦</div>
+<div class="heading">
 
-        <h3>Personalized Care</h3>
+<h2>
+Start with a conversation.
+</h2>
 
-        <p>
-          Every consultation begins with understanding your
-          individual needs and experience.
-        </p>
+</div>
 
-      </div>
+<p>
+Before selecting a solution, we take the time to understand the person experiencing hair loss.
+</p>
 
+<p>
+Your consultation provides an opportunity to discuss your concerns, lifestyle, preferences and potential medical hair solutions.
+</p>
 
-      <div class="trust-card">
+<div class="check-list">
 
-        <div class="icon">✦</div>
+<div class="check">
+<span>✓</span>
+Personalized discussion
+</div>
 
-        <h3>Premium Solutions</h3>
+<div class="check">
+<span>✓</span>
+Education about available options
+</div>
 
-        <p>
-          We focus on quality hair solutions designed around
-          comfort, confidence and lifestyle.
-        </p>
+<div class="check">
+<span>✓</span>
+Solution-focused planning
+</div>
 
-      </div>
+</div>
 
+<a href="#consultations" class="btn btn-primary">
+Book Your Consultation
+</a>
 
-      <div class="trust-card">
+</div>
 
-        <div class="icon">✦</div>
+</div>
 
-        <h3>Education First</h3>
-
-        <p>
-          Our goal is to help clients understand their options
-          so they can make informed decisions.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FAQ
-========================= -->
-
-<section class="section-light" id="faq">
-
-  <div class="container">
-
-    <div class="section-heading center">
-
-      <div class="section-label">
-        Frequently Asked Questions
-      </div>
-
-      <h2>
-        Questions? Start here.
-      </h2>
-
-    </div>
-
-
-    <div class="faq">
-
-      <details>
-
-        <summary>
-          Who are medical hair solutions for?
-        </summary>
-
-        <p>
-          Medical hair solutions may be appropriate for individuals
-          experiencing hair loss associated with alopecia, medical
-          treatment, autoimmune conditions, genetic hair loss and
-          other causes. A consultation helps determine appropriate
-          options for each individual.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          What is a cranial prosthesis?
-        </summary>
-
-        <p>
-          A cranial prosthesis is a specialized hair-replacement
-          solution designed for individuals experiencing significant
-          hair loss. Your consultation can help determine whether
-          this type of solution may meet your needs.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          Do you offer virtual consultations?
-        </summary>
-
-        <p>
-          Yes. Virtual medical hair consultations are available for
-          clients who prefer to meet remotely.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          Do you accept insurance?
-        </summary>
-
-        <p>
-          Insurance coverage varies by plan, diagnosis and individual
-          circumstances. Coverage should be verified before services
-          are provided.
-        </p>
-
-      </details>
-
-
-      <details>
-
-        <summary>
-          How do I get started?
-        </summary>
-
-        <p>
-          Begin by selecting the consultation that best fits your
-          needs and follow the booking process.
-        </p>
-
-      </details>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
-<!-- =========================
-     CTA
-========================= -->
+<!-- SOLUTIONS -->
+
+<section class="section-light" id="solutions">
+
+<div class="container">
+
+<div class="heading center">
+
+<div class="label">
+Our Solutions
+</div>
+
+<h2>
+Personalized solutions for every journey.
+</h2>
+
+<p>
+Explore specialized medical hair solutions designed around comfort, confidence and individual needs.
+</p>
+
+</div>
+
+
+<div class="services">
+
+
+<article class="service">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=90"
+alt="Medical wig and hair solution">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Medical Wigs
+</h3>
+
+<p>
+Premium wig solutions for individuals experiencing medically related hair loss.
+</p>
+
+<span class="service-link">
+EXPLORE MEDICAL WIGS →
+</span>
+
+</div>
+
+</article>
+
+
+<article class="service">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1200&q=90"
+alt="Custom hair replacement solution">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Custom Cranial Prostheses
+</h3>
+
+<p>
+Personalized cranial prosthesis solutions for individuals experiencing significant hair loss.
+</p>
+
+<span class="service-link">
+EXPLORE CRANIAL PROSTHESES →
+</span>
+
+</div>
+
+</article>
+
+
+<article class="service">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1200&q=90"
+alt="Premium human hair solution">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Human-Hair Solutions
+</h3>
+
+<p>
+Premium human-hair options designed around lifestyle, appearance and individual preferences.
+</p>
+
+<span class="service-link">
+EXPLORE HUMAN HAIR →
+</span>
+
+</div>
+
+</article>
+
+
+<article class="service">
+
+<div class="service-image">
+
+<img
+src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=90"
+alt="Medical hair consultation">
+
+</div>
+
+<div class="service-content">
+
+<h3>
+Medical Hair Consultations
+</h3>
+
+<p>
+Begin with a personalized consultation to explore potential medical hair solutions.
+</p>
+
+<span class="service-link">
+START YOUR CONSULTATION →
+</span>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FEATURE -->
+
+<section class="feature">
+
+<div class="container">
+
+<div class="feature-content">
+
+<div class="label" style="color:#D8B66A;">
+Designed Around You
+</div>
+
+<h2>
+Because hair loss is personal.
+</h2>
+
+<p>
+Your experience deserves more than a one-size-fits-all solution. We believe your care should be as individual as you are.
+</p>
+
+<a href="#consultations" class="btn btn-primary">
+Begin Your Consultation
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process">
+
+<div class="container">
+
+<div class="heading center">
+
+<div class="label">
+The Experience
+</div>
+
+<h2>
+Simple. Personal. Intentional.
+</h2>
+
+<p>
+We designed the experience to help you move through your medical hair journey with clarity.
+</p>
+
+</div>
+
+
+<div class="process">
+
+
+<div class="step">
+
+<div class="step-number">
+STEP 01
+</div>
+
+<h3>
+Choose Your Consultation
+</h3>
+
+<p>
+Select the consultation that best matches your needs.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+STEP 02
+</div>
+
+<h3>
+Share Your Story
+</h3>
+
+<p>
+Complete your intake information so we can understand your individual experience.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+STEP 03
+</div>
+
+<h3>
+Explore Your Options
+</h3>
+
+<p>
+Discuss potential medical hair solutions during your personalized consultation.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">
+STEP 04
+</div>
+
+<h3>
+Move Forward
+</h3>
+
+<p>
+Receive guidance on next steps toward your selected solution.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONSULTATIONS -->
+
+<section class="section-cream" id="consultations">
+
+<div class="container">
+
+<div class="heading center">
+
+<div class="label">
+Consultations
+</div>
+
+<h2>
+Your first step starts here.
+</h2>
+
+<p>
+Choose the consultation experience that works best for you.
+</p>
+
+</div>
+
+
+<div class="consultations">
+
+
+<div class="consult-card">
+
+<div class="number">
+01
+</div>
+
+<h3>
+Medical Hair Consultation
+</h3>
+
+<p>
+A personalized consultation to discuss your hair-loss experience and explore appropriate medical hair solutions.
+</p>
+
+<div class="price">
+$75
+</div>
+
+</div>
+
+
+<div class="consult-card">
+
+<div class="number">
+02
+</div>
+
+<h3>
+Custom Cranial Prosthesis Consultation
+</h3>
+
+<p>
+A specialized consultation for clients considering a custom cranial prosthesis.
+</p>
+
+<div class="price">
+$150
+</div>
+
+</div>
+
+
+<div class="consult-card">
+
+<div class="number">
+03
+</div>
+
+<h3>
+Virtual Medical Hair Consultation
+</h3>
+
+<p>
+Meet virtually from wherever you are to discuss your needs and available solutions.
+</p>
+
+<div class="price">
+$50
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<div class="container">
+
+<div class="education">
+
+
+<div class="education-image">
+
+<img
+src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=90"
+alt="Medical education and healthcare">
+
+</div>
+
+
+<div class="education-copy">
+
+<div class="label">
+Education First
+</div>
+
+<div class="heading">
+
+<h2>
+Knowledge leads to better conversations.
+</h2>
+
+</div>
+
+<p>
+Hair loss may be associated with a variety of circumstances, including alopecia, medical treatment, autoimmune conditions, genetics and other factors.
+</p>
+
+<p>
+Our role is to help clients understand their medical hair options and ask informed questions as they navigate their individual experience.
+</p>
+
+<a href="#faq" class="btn btn-primary">
+Explore FAQs
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOUNDER -->
+
+<section class="section-light">
+
+<div class="container">
+
+<div class="founder">
+
+
+<div class="founder-image">
+
+<img
+src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=1000&q=90"
+alt="Professional woman representing the founder">
+
+</div>
+
+
+<div class="founder-copy">
+
+<div class="label">
+Meet The Founder
+</div>
+
+<div class="heading">
+
+<h2>
+Healthcare innovation with purpose.
+</h2>
+
+</div>
+
+<p>
+Mobile Genetix Medical Hair™ is a specialized division of Mobile Genetix™, founded by Antionett Beck-Doss.
+</p>
+
+<p>
+Her vision is to create accessible, personalized healthcare-focused services that recognize the individual behind the diagnosis, condition or concern.
+</p>
+
+<p>
+Medical hair is more than appearance. For many people, it is connected to confidence, identity and quality of life.
+</p>
+
+<div class="signature">
+
+<strong>
+Antionett Beck-Doss
+</strong>
+
+<span>
+Founder & CEO, Mobile Genetix™
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="heading center">
+
+<div class="label">
+Frequently Asked Questions
+</div>
+
+<h2>
+Questions? Start here.
+</h2>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+Who are medical hair solutions for?
+</summary>
+
+<p>
+Medical hair solutions may be appropriate for individuals experiencing hair loss associated with alopecia, medical treatment, autoimmune conditions, genetic hair loss and other causes. A consultation helps determine appropriate options for each individual.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+What is a cranial prosthesis?
+</summary>
+
+<p>
+A cranial prosthesis is a specialized hair-replacement solution designed for individuals experiencing significant hair loss.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you offer virtual consultations?
+</summary>
+
+<p>
+Yes. Virtual medical hair consultations are available for clients who prefer to meet remotely.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Do you accept insurance?
+</summary>
+
+<p>
+Insurance coverage varies by plan, diagnosis and individual circumstances. Coverage should be verified before services are provided.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+How do I get started?
+</summary>
+
+<p>
+Begin by selecting the consultation that best fits your needs and follow the booking process.
+</p>
+
+</details>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CTA -->
 
 <section class="cta">
 
-  <div class="container">
+<div class="container">
 
-    <h2>
-      Your next chapter can begin with confidence.
-    </h2>
+<h2>
+Your next chapter can begin with confidence.
+</h2>
 
-    <p>
-      Start with a personalized medical hair consultation and
-      discover solutions designed around you.
-    </p>
+<p>
+Start with a personalized medical hair consultation and discover solutions designed around you.
+</p>
 
-    <a href="#contact" class="btn btn-primary">
-      Start Your Journey
-    </a>
+<a href="#contact" class="btn btn-primary">
+Start Your Journey
+</a>
 
-  </div>
+</div>
 
 </section>
 
 
-<!-- =========================
-     CONTACT
-========================= -->
+<!-- CONTACT -->
 
 <section id="contact">
 
-  <div class="container">
+<div class="container">
 
-    <div class="contact-box">
+<div class="contact-box">
 
-      <div class="section-label">
-        Connect With Us
-      </div>
+<div class="label">
+Connect With Us
+</div>
 
-      <h2>
-        Ready to explore your options?
-      </h2>
+<h2>
+Ready to explore your options?
+</h2>
 
-      <p>
-        Contact Mobile Genetix Medical Hair™ to begin your
-        personalized experience.
-      </p>
+<p>
+Contact Mobile Genetix Medical Hair™ to begin your personalized experience.
+</p>
 
-      <div class="buttons" style="justify-content:center;">
+<div class="buttons" style="justify-content:center;">
 
-        <a
-          href="mailto:Mobilegenetixdna@hotmail.com"
-          class="btn btn-primary"
-        >
-          Contact Us
-        </a>
+<a href="mailto:Mobilegenetixdna@hotmail.com" class="btn btn-primary">
+Contact Us
+</a>
 
-        <a
-          href="https://linktr.ee/mobilegenetix"
-          target="_blank"
-          class="btn btn-outline"
-        >
-          Mobile Genetix™ Hub
-        </a>
+<a href="https://linktr.ee/mobilegenetix" target="_blank" class="btn btn-outline">
+Mobile Genetix™ Hub
+</a>
 
-      </div>
+</div>
 
-      <div class="contact-details">
+<div class="contact-details">
 
-        <span>734-969-1449</span>
+<span>
+734-969-1449
+</span>
 
-        <span>Mobilegenetixdna@hotmail.com</span>
+<span>
+Mobilegenetixdna@hotmail.com
+</span>
 
-      </div>
+</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- FOOTER -->
 
 <footer>
 
-  <div class="container">
+<div class="container">
 
-    <div class="footer-top">
+<div class="footer-top">
 
-      <div class="footer-brand">
+<div class="footer-brand">
 
-        <h3>
-          Mobile Genetix Medical Hair<span class="gold">™</span>
-        </h3>
+<h3>
+Mobile Genetix Medical Hair<span class="gold">™</span>
+</h3>
 
-        <p>
-          A specialized division of Mobile Genetix™ providing
-          personalized medical hair and cranial prosthesis solutions.
-        </p>
+<p>
+A specialized division of Mobile Genetix™ providing personalized medical hair and cranial prosthesis solutions.
+</p>
 
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="#about">About</a>
-
-        <a href="#solutions">Solutions</a>
-
-        <a href="#consultations">Consultations</a>
-
-        <a href="#faq">FAQs</a>
-
-        <a href="https://linktr.ee/mobilegenetix" target="_blank">
-          Mobile Genetix™
-        </a>
-
-      </div>
-
-    </div>
+</div>
 
 
-    <div class="footer-bottom">
+<div class="footer-links">
 
-      <span>
-        © 2026 Mobile Genetix Medical Hair™. All rights reserved.
-      </span>
+<a href="#about">About</a>
 
-      <span>
-        Part of the <span class="gold">Mobile Genetix™</span> family.
-      </span>
+<a href="#hairloss">Hair Loss</a>
 
-    </div>
+<a href="#solutions">Solutions</a>
 
-  </div>
+<a href="#consultations">Consultations</a>
+
+<a href="#education">Education</a>
+
+<a href="#faq">FAQs</a>
+
+<a href="https://linktr.ee/mobilegenetix" target="_blank">
+Mobile Genetix™
+</a>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+© 2026 Mobile Genetix Medical Hair™. All rights reserved.
+</span>
+
+<span>
+Part of the <span class="gold">Mobile Genetix™</span> family.
+</span>
+
+</div>
+
+</div>
 
 </footer>
 
@@ -1647,11 +1896,15 @@ footer{
 <script>
 
 function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
+
+document.getElementById("navLinks").classList.toggle("active");
+
 }
 
 function closeMenu(){
-  document.getElementById("navLinks").classList.remove("active");
+
+document.getElementById("navLinks").classList.remove("active");
+
 }
 
 </script>
